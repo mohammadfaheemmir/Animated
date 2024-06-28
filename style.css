@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 40px;
+    font-weight: 800;
+    background-color: #000;
+}
+
+.text{
+    background-image: linear-gradient(to right, #00F260, #f79d00, #0575E6, #64f38c);
+    background-size: 300%;
+    background-position: -100%;
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+    animation: animatedText 3s infinite alternate-reverse;
+
+}
+
+@keyframes animatedText{
+    to{
+        background-position: 100%;
+    }
+}
+
+@media (max-width:760px){
+    .text{
+        text-align: center;
+    }
+}
+
